@@ -1,0 +1,95 @@
+#header, .noprint {
+	display:none !important;
+}
+
+*,
+*:before,
+*:after {
+	background:transparent !important;
+	box-shadow:none !important;
+	color:#000 !important; /* Black prints faster: h5bp.com/s */
+	text-shadow:none !important;
+}
+
+body {
+	font:15px/18px "Century Gothic", Verdana, Arial, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+a,
+a:visited {
+	text-decoration:underline;
+}
+
+a[href]:after {
+	content:" (" attr(href) ")";
+}
+
+abbr[title]:after {
+	content:" (" attr(title) ")";
+}
+
+/* Don't show links that are fragment identifiers,
+   or use the `javascript:` pseudo protocol */
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+	content: "";
+}
+
+pre,
+blockquote {
+	border:1px solid #999;
+	page-break-inside:avoid;
+}
+
+thead {
+	display:table-header-group; /* h5bp.com/t */
+}
+
+tr,
+img {
+	page-break-inside:avoid;
+}
+
+img {
+	border:none;
+	margin:20px;
+	max-width:100% !important;
+}
+
+p,
+h2,
+h3 {
+	orphans:3;
+	widows:3;
+}
+
+h2,
+h3 {
+	page-break-after:avoid;
+}
+
+p {font: 15px/18px "Century Gothic", Verdana, Arial, sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size:28px;
+	line-height:1.1em;
+	margin:0;
+	padding:10px 0 20px;
+}
+
+h1 {clear:both;font-size:29px;}
+h2 {clear:both;font-size:25px;}
+h3 {font-size:21px;}
+h4 {font-size:18px;}
+h5 {font-size:16px;}
+h6 {font-size:14px;}
+
+table, th, td {text-align: left;}
+table {padding-bottom: 40px;}
+th, td {
+	border-bottom:1px solid #999;
+	padding:6px 20px 6px 0;
+	text-align:left;
+}

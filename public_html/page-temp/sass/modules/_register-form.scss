@@ -1,0 +1,93 @@
+.register-form {
+    background-color:#f5dbb2;
+    box-shadow:0 0 15px rgba(125,36,28,.75);
+    margin:0 auto;
+    padding:6px;
+    width:555px;
+
+    .border {
+        border:1px solid #c7a888;
+        padding:13px 15px 0;
+    }
+
+    h1 {
+        border:2px solid #5e3326;
+        border-left:0;
+        border-right:0;
+        color:#5e3327;
+        font:700 1.25em/1.2em 'Roboto Slab', serif; /* 16/20 24/20 */
+        margin:0 0 0.4em; /* 8/20 */
+        padding:0.2em 0 0.25em; /* 4/20 5/20 */
+    }
+
+    p {
+        color:#e63c2e;
+        font:700 1.125em/1.16666666666667em 'Open Sans', sans-serif; /* 18/16 21/18 */
+        margin:0 0 1.05555555555556em; /* 19/18 */
+        padding:0;
+    }
+
+    .form-horizontal {
+        margin:0;
+        padding:0;
+        width:100%;
+
+        .form-group {
+            margin-bottom:0.875em; /* 14/16 */
+        }
+
+        label {
+            color:#5e3326;
+            float:left;
+            font:400 0.875em/1.85714285714286em 'Open Sans', sans-serif; /* 14/16 26/14 */
+            margin:0;
+            padding:0 15px 0 108px;
+            text-align:left;
+            width:188px;
+        }
+
+        input {
+            background:none #ffeed4;
+            border:1px solid #5e3326;
+            border-radius:0;
+            box-shadow:none;
+            color:#5e3326;
+            font:400 0.875em/1.71428571428571em 'Open Sans', sans-serif; /* 14/16 24/14 */
+            float:left;
+            height:1.85714285714286em; /* 26/14 */
+            margin:0;
+            outline:none;
+            padding:0 10px;
+            width:210px;
+        }
+
+        .checkbox {
+            label {
+                float:none;
+                font-size:0.8125em; /* 13/16 */
+                line-height:1.23076923076923em; /* 16/13 */
+                padding:0 30px 0 92px;
+                width:100%;
+            }
+
+            input {
+                background-color:transparent;
+                height:auto;
+                line-height:auto;
+                padding:0;
+                width:auto;
+            }
+        }
+
+        button {
+            background:none #9acaeb;
+            border-radius:0;
+            box-shadow:none;
+            display:block;
+            height:36px;
+            margin:0 auto;
+            outline:none;
+            padding:4px;
+        }
+    }
+}

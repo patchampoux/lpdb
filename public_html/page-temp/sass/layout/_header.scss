@@ -1,0 +1,37 @@
+#header {
+    background:url('../images/bg-header-rep.png') repeat-x center 124px;
+    height:465px;
+
+    .container {
+        position:relative;
+    }
+
+    h2 {
+        color:#f1dab1;
+        font:700 54px/54px 'Roboto Slab', serif;
+        margin:0;
+        padding:39px 0 0;
+    }
+
+    .brand {
+        background:url('../images/logo.png') no-repeat 0 0;
+        height:312px;
+        left:50%;
+        margin-left:-225px;
+        position:absolute;
+        top:128px;
+        width:450px;
+
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+
+            /* Retina-specific stuff here */
+
+        }
+    }
+}

@@ -1,0 +1,120 @@
+html {
+    font-size:100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body,
+input,
+select,
+button,
+textarea {
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+}
+
+body {
+    background:url('../images/bg-body-rep.png') repeat center 0;
+    font-size:100%;
+    text-rendering:optimizeLegibility;
+}
+
+#wrapper {
+    background:url('../images/bg-wrapper.png') no-repeat center 0;
+}
+
+a {
+    &:visited {
+
+    }
+
+    &:hover {
+
+    }
+}
+
+h1,
+.h1 {
+
+}
+
+h2,
+.h2 {
+
+}
+
+h3,
+.h3 {
+
+}
+
+h4,
+.h4 {
+
+}
+
+h5,
+.h5 {
+
+}
+
+p {
+
+}
+
+ul {
+    li {
+
+    }
+}
+
+ol {
+    li {
+
+    }
+}
+
+hr {
+
+}
+
+img {
+
+}
+
+.colored {
+
+}
+
+.collapsible_block {
+    &:hover {
+        a.collapsible_link {
+
+        }
+    }
+
+    a.collapsible_link {
+
+    }
+
+    &.collapsible_block_selected {
+        a.collapsible_link {
+
+        }
+    }
+
+    & + & {
+
+    }
+
+    .collapsible_content {
+
+    }
+}
+
+.tmpl_box {
+
+}
+
+.tmpl_colored_table {
+
+}
