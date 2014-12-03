@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://lespeteuxdebroue.com/" />
     <meta property="og:image" content="http://lespeteuxdebroue.com/page-temp/images/og-img.png" />
-    <meta property="og:description" content="Inscrivez-vous pour être averti du lancement du site. Recevez GRATUITEMENT les invitations et les avantages pour les événements des peteux de broue !" />
+    <meta property="og:description" content="Une belle gang d'amis passionnés de bière qui ont décidé de partager leurs découvertes brassicoles ! " />
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 

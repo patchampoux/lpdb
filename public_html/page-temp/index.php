@@ -1,4 +1,6 @@
 <?php
+require 'vendor/MailChimp.php';
+
 $error = false;
 $success = false;
 $firstname_error = false;
@@ -37,6 +39,18 @@ if(isset($_POST['mailing-submit'])) {
 
     if($error == false) {
         $success = true;
+
+        $MailChimp = new \Drewm\MailChimp('0abd68f5c271d6524b11462404a4b608-us9');
+        $result = $MailChimp->call('lists/subscribe', array(
+            'id'                => '499861',
+            'email'             => array('email'=>$mailing_email),
+            'merge_vars'        => array('FNAME'=>$mailing_firstname, 'LNAME'=>$mailing_lastname),
+            'double_optin'      => false,
+            'update_existing'   => true,
+            'replace_interests' => false,
+            'send_welcome'      => false
+        ));
+        print_r($result);
     }
 }
 
