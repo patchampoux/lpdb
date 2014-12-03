@@ -99,7 +99,9 @@ include '_header.php';
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <button type="submit" name="mailing-submit" class="btn btn-default"><span>M'inscrire!</span></button>
+                        <div class="text-center">
+                            <button type="submit" name="mailing-submit" class="btn btn-default"><span>M'inscrire!</span></button>
+                        </div>
                     </form>
                 <?php else : ?>
                     <p>Merci de vous êtres inscrit à notre liste d'envoi, vous recevrez maintenant toutes les invitations à nos événements.</p>
