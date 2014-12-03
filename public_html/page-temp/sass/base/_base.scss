@@ -19,7 +19,11 @@ body {
 }
 
 #wrapper {
-    background:url('../images/bg-wrapper.png') no-repeat center 0;
+    background:url('../images/bg-wrapper.png') no-repeat center -62px;
+
+    @media (min-width: $screen-sm-min) {
+        background-position:center 0;
+    }
 }
 
 a {

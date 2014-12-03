@@ -1,6 +1,12 @@
 #header {
-    background:url('../images/bg-header-rep.png') repeat-x center 124px;
-    height:465px;
+    background:url('../images/bg-header-rep-xs.png') repeat-x center 62px;
+    height:348px;
+
+    @media (min-width: $screen-sm-min) {
+        background-image:url('../images/bg-header-rep.png');
+        background-position:center 124px;
+        height:465px;
+    }
 
     .container {
         position:relative;
@@ -8,19 +14,25 @@
 
     h2 {
         color:#f1dab1;
-        font:700 54px/54px 'Roboto Slab', serif;
+        font:700 28px/28px 'Roboto Slab', serif;
         margin:0;
-        padding:39px 0 0;
+        padding:29px 0 0;
+
+        @media (min-width: $screen-sm-min) {
+            font-size:54px;
+            line-height:54px;
+            padding-top:39px;
+        }
     }
 
     .brand {
-        background:url('../images/logo.png') no-repeat 0 0;
-        height:312px;
+        background:url('../images/logo-xs.png') no-repeat 0 0;
+        height:222px;
         left:50%;
-        margin-left:-225px;
+        margin-left:-160px;
         position:absolute;
-        top:128px;
-        width:450px;
+        top:81px;
+        width:320px;
 
         @media
         only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -29,9 +41,27 @@
         only screen and (        min-device-pixel-ratio: 2),
         only screen and (                min-resolution: 192dpi),
         only screen and (                min-resolution: 2dppx) {
+            background-image:url('../images/logo-xs-2x.png');
+            background-size:320px 222px;
+        }
 
-            /* Retina-specific stuff here */
+        @media (min-width: $screen-sm-min) {
+            background-image:url('../images/logo.png');
+            height:312px;
+            margin-left:-225px;
+            top:128px;
+            width:450px;
 
+            @media
+            only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (   min--moz-device-pixel-ratio: 2),
+            only screen and (     -o-min-device-pixel-ratio: 2/1),
+            only screen and (        min-device-pixel-ratio: 2),
+            only screen and (                min-resolution: 192dpi),
+            only screen and (                min-resolution: 2dppx) {
+                background-image:url('../images/logo-2x.png');
+                background-size:450px 312px;
+            }
         }
     }
 }

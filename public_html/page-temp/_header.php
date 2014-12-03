@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <link rel="stylesheet" media="screen" href="css/main.css" />
 
     <link href='//fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet'>

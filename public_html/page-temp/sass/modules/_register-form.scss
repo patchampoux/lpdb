@@ -1,13 +1,16 @@
 .register-form {
     background-color:#f5dbb2;
     box-shadow:0 0 15px rgba(125,36,28,.75);
-    margin:0 auto;
     padding:6px;
-    width:555px;
+
+    @media (min-width: 585px) {
+        margin:0 auto;
+        width:555px;
+    }
 
     .border {
         border:1px solid #c7a888;
-        padding:13px 15px 0;
+        padding:15px;
     }
 
     h1 {
@@ -34,16 +37,27 @@
 
         .form-group {
             margin-bottom:0.875em; /* 14/16 */
+            padding:0 15px;
+
+            @media (min-width: 585px) {
+                padding:0 15px 0 123px;
+            }
         }
 
         label {
             color:#5e3326;
-            float:left;
+            display:block;
             font:400 0.875em/1.85714285714286em 'Open Sans', sans-serif; /* 14/16 26/14 */
             margin:0;
-            padding:0 15px 0 108px;
+            padding:0;
             text-align:left;
-            width:188px;
+            width:100%;
+
+            @media (min-width: 585px) {
+                float:left;
+                text-align:left;
+                width:80px;
+            }
         }
 
         input {
@@ -58,36 +72,86 @@
             margin:0;
             outline:none;
             padding:0 10px;
-            width:210px;
+            width:100%;
+
+            @media (min-width: 585px) {
+                width:210px;
+            }
         }
 
         .checkbox {
+            @media (min-width: 585px) {
+                margin-left:-31px;
+                margin-right:15px;
+            }
+
             label {
                 float:none;
                 font-size:0.8125em; /* 13/16 */
                 line-height:1.23076923076923em; /* 16/13 */
-                padding:0 30px 0 92px;
+                padding-left:15px;
+                position:relative;
                 width:100%;
             }
 
             input {
                 background-color:transparent;
                 height:auto;
+                left:0;
                 line-height:auto;
                 padding:0;
+                position:absolute;
+                top:0;
                 width:auto;
+            }
+
+            .icheckbox {
+                background-color:#ffeed4;
+                border:1px solid #5e3326;
+                height:10px;
+                left:0;
+                position:absolute;
+                top:0.23076923076923em; /* 3/13 */
+                width:10px;
+
+                span {
+                    background-color:#5e3326;
+                    bottom:1px;
+                    display:none;
+                    left:1px;
+                    position:absolute;
+                    right:1px;
+                    top:1px;
+                }
+
+                &.checked {
+                    span {
+                        display:block;
+                    }
+                }
             }
         }
 
         button {
             background:none #9acaeb;
+            border:0;
             border-radius:0;
             box-shadow:none;
+            color:#5e3326;
             display:block;
+            font-size:1em;
             height:36px;
             margin:0 auto;
             outline:none;
             padding:4px;
+
+            span {
+                border:1px solid #87aec9;
+                display:block;
+                line-height:26px;
+                font:700 1em/1.625em 'Roboto Slab', serif; /* 16/16 26/16 */
+                padding:0 50px;
+            }
         }
     }
 }
