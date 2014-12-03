@@ -145,12 +145,48 @@
             outline:none;
             padding:4px;
 
+            &:hover {
+                background-color:#5e3326;
+                color:#ffeed4;
+
+                span {
+                    border-color:#6f483d;
+                }
+            }
+
+            &:focus,
+            &:active {
+                box-shadow:none;
+                outline:none;
+            }
+
             span {
                 border:1px solid #87aec9;
                 display:block;
                 line-height:26px;
                 font:700 1em/1.625em 'Roboto Slab', serif; /* 16/16 26/16 */
                 padding:0 50px;
+            }
+        }
+
+        .msg {
+            clear:both;
+            color:#e63c2e;
+            display:block;
+            font-size:0.75em; /* 12/16 */
+            line-height:1.33333333333333em; /* 16/12 */
+            padding:0.33333333333333em 0 0 80px; /* 4/12 */
+        }
+
+        .error {
+            label {
+                color:#e63c2e;
+            }
+
+            .checkbox {
+                .msg {
+                    padding-left:15px;
+                }
             }
         }
     }

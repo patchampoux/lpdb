@@ -10,6 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
+    <meta property="og:title" content="Vous aussi, petez d'la broue ! - Les Peteux de Broue" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://lespeteuxdebroue.com/" />
+    <meta property="og:image" content="http://lespeteuxdebroue.com/page-temp/images/og-img.png" />
+    <meta property="og:description" content="Inscrivez-vous pour être averti du lancement du site. Recevez GRATUITEMENT les invitations et les avantages pour les événements des peteux de broue !" />
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" media="screen" href="css/main.css" />
