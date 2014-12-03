@@ -42,7 +42,7 @@ if(isset($_POST['mailing-submit'])) {
 
         $MailChimp = new \Drewm\MailChimp('0abd68f5c271d6524b11462404a4b608-us9');
         $result = $MailChimp->call('lists/subscribe', array(
-            'id'                => '499861',
+            'id'                => '74e3174bdb',
             'email'             => array('email'=>$mailing_email),
             'merge_vars'        => array('FNAME'=>$mailing_firstname, 'LNAME'=>$mailing_lastname),
             'double_optin'      => false,
@@ -50,7 +50,7 @@ if(isset($_POST['mailing-submit'])) {
             'replace_interests' => false,
             'send_welcome'      => false
         ));
-        print_r($result);
+        //print_r($result);
     }
 }
 
