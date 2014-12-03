@@ -51,6 +51,12 @@ if(isset($_POST['mailing-submit'])) {
             'send_welcome'      => false
         ));
         //print_r($result);
+
+        if(isset($result['name']) && $result['name'] == 'ValidationError') {
+            $email_error_special = true;
+            $error = true;
+            $success = false;
+        }
     }
 }
 
@@ -79,7 +85,7 @@ include '_header.php';
                                 <span class="msg">Veuillez entrer votre nom</span>
                             <?php endif; ?>
                         </div>
-                        <div class="form-group<?php if($email_error) : ?> error<?php endif; ?><?php if($email_error_special) : ?> error-special<?php endif; ?>">
+                        <div class="form-group<?php if($email_error || $email_error_special) : ?> error<?php endif; ?>">
                             <label for="mailing-email" class="control-label">Courriel</label>
                             <input type="email" name="mailing-email" id="mailing-email" class="form-control" value="<?php if(isset($mailing_email)) { echo $mailing_email; } ?>">
                             <?php if($email_error) : ?>
