@@ -175,7 +175,12 @@
             display:block;
             font-size:0.75em; /* 12/16 */
             line-height:1.33333333333333em; /* 16/12 */
-            padding:0.33333333333333em 0 0 80px; /* 4/12 */
+            padding:0.33333333333333em 0 0; /* 4/12 */
+
+            @media (min-width: 585px) {
+                padding-left:80px;
+            }
+
         }
 
         .error {
